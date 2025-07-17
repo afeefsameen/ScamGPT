@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Check if the OS is Windows
+if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
+  # Windows
+  ./start_scamgpt.bat
+else
+  # Linux/macOS
+  ./start_scamgpt.sh
+fi

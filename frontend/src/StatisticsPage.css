@@ -1,0 +1,161 @@
+/* StatisticsPage.css */
+.statistics-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.statistics-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.statistics-header h1 {
+  margin-bottom: 1rem;
+}
+
+.statistics-header p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.statistics-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.statistics-card {
+  background-color: white;
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+}
+
+.statistics-card h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-light);
+}
+
+.chart-container {
+  margin: 2rem 0;
+  height: 400px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.data-table th, .data-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.data-table th {
+  background-color: var(--bg-light);
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.data-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.stat-highlight {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-item {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.stat-item .value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.stat-item .label {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.trend-indicator {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.trend-up {
+  color: var(--danger-color);
+}
+
+.trend-down {
+  color: var(--secondary-color);
+}
+
+.statistics-cta {
+  background-color: var(--primary-light);
+  color: white;
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.statistics-cta h3 {
+  margin-bottom: 1rem;
+}
+
+.statistics-cta p {
+  margin-bottom: 1.5rem;
+}
+
+.statistics-cta .cta-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.statistics-cta .cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.statistics-cta .cta-button svg {
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .statistics-content {
+    grid-template-columns: 2fr 1fr;
+  }
+  
+  .statistics-header {
+    padding: 4rem 2rem;
+  }
+}

@@ -1,0 +1,134 @@
+/* ScamTypePage.css */
+.scam-type-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.scam-header {
+  background: linear-gradient(135deg, var(--danger-color), #ff6b6b);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.scam-header h1 {
+  margin-bottom: 1rem;
+}
+
+.scam-header p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.scam-content {
+  background-color: white;
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+}
+
+.content-wrapper {
+  line-height: 1.7;
+}
+
+.content-wrapper h2 {
+  color: var(--danger-color);
+  margin: 1.5rem 0 1rem;
+}
+
+.content-wrapper h3 {
+  color: var(--text-dark);
+  margin: 1.5rem 0 1rem;
+}
+
+.content-wrapper p {
+  margin-bottom: 1rem;
+}
+
+.content-wrapper ul, .content-wrapper ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.content-wrapper li {
+  margin-bottom: 0.5rem;
+}
+
+.scam-cta {
+  background-color: var(--primary-light);
+  color: white;
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.scam-cta h3 {
+  margin-bottom: 1rem;
+}
+
+.scam-cta p {
+  margin-bottom: 1.5rem;
+}
+
+.scam-cta .cta-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.scam-cta .cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.scam-cta .cta-button svg {
+  margin-left: 0.5rem;
+}
+
+.scam-examples {
+  margin-top: 2rem;
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--danger-color);
+}
+
+.scam-examples h3 {
+  color: var(--danger-color);
+  margin-bottom: 1rem;
+}
+
+.example-message {
+  background-color: white;
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.example-analysis {
+  padding-left: 1rem;
+  border-left: 3px solid var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .scam-header {
+    padding: 4rem 2rem;
+  }
+  
+  .scam-content {
+    padding: 3rem;
+  }
+}
